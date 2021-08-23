@@ -1,8 +1,6 @@
-
 <?php
     require_once('partial/header.php');
     require_once('partial/navbar.php');
-
     if(isset($_GET['page'])) {
         $hasPage = file_exists('pages/' . $_GET['page'] . '.php');
         $page = "pages/". $_GET['page'] . ".php";
